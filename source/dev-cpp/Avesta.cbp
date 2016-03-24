@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Avesta v4" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="../../server/Avesta" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D__USE_MYSQL__" />
+			<Add option="-D__SKULLSYSTEM__" />
+			<Add option="-D__USE_OTPCH__" />
+			<Add option="-D__ENABLE_SERVER_DIAGNOSTIC__" />
+			<Add option="-D__PB_GMINVISIBLE__" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+			<Add library="libxml2" />
+			<Add library="wsock32" />
+			<Add library="mysql" />
+			<Add library="ws2_32" />
+			<Add library="lua5.1" />
+			<Add library="boost_date_time" />
+			<Add library="boost_system" />
+			<Add library="boost_thread" />
+			<Add library="boost_regex" />
+			<Add library="luasql_mysql" />
+			<Add library="luasql_sqlite" />
+			<Add library="gmp" />
+		</Linker>
+		<Unit filename="../account.cpp" />
+		<Unit filename="../account.h" />
+		<Unit filename="../actions.cpp" />
+		<Unit filename="../actions.h" />
+		<Unit filename="../allocator.cpp" />
+		<Unit filename="../allocator.h" />
+		<Unit filename="../ban.cpp" />
+		<Unit filename="../ban.h" />
+		<Unit filename="../baseevents.cpp" />
+		<Unit filename="../baseevents.h" />
+		<Unit filename="../beds.cpp" />
+		<Unit filename="../beds.h" />
+		<Unit filename="../chat.cpp" />
+		<Unit filename="../chat.h" />
+		<Unit filename="../combat.cpp" />
+		<Unit filename="../combat.h" />
+		<Unit filename="../commands.cpp" />
+		<Unit filename="../commands.h" />
+		<Unit filename="../condition.cpp" />
+		<Unit filename="../condition.h" />
+		<Unit filename="../configmanager.cpp" />
+		<Unit filename="../configmanager.h" />
+		<Unit filename="../connection.cpp" />
+		<Unit filename="../connection.h" />
+		<Unit filename="../const76.h" />
+		<Unit filename="../container.cpp" />
+		<Unit filename="../container.h" />
+		<Unit filename="../creature.cpp" />
+		<Unit filename="../creature.h" />
+		<Unit filename="../creatureevent.cpp" />
+		<Unit filename="../creatureevent.h" />
+		<Unit filename="../cylinder.cpp" />
+		<Unit filename="../cylinder.h" />
+		<Unit filename="../database.cpp" />
+		<Unit filename="../database.h" />
+		<Unit filename="../databasemysql.cpp" />
+		<Unit filename="../databasemysql.h" />
+		<Unit filename="../definitions.h" />
+		<Unit filename="../depot.cpp" />
+		<Unit filename="../depot.h" />
+		<Unit filename="../enums.h" />
+		<Unit filename="../exception.cpp" />
+		<Unit filename="../exception.h" />
+		<Unit filename="../fileloader.cpp" />
+		<Unit filename="../fileloader.h" />
+		<Unit filename="../game.cpp" />
+		<Unit filename="../game.h" />
+		<Unit filename="../house.cpp" />
+		<Unit filename="../house.h" />
+		<Unit filename="../housetile.cpp" />
+		<Unit filename="../housetile.h" />
+		<Unit filename="../ioaccount.cpp" />
+		<Unit filename="../ioaccount.h" />
+		<Unit filename="../iomap.h" />
+		<Unit filename="../iomapotbm.cpp" />
+		<Unit filename="../iomapotbm.h" />
+		<Unit filename="../iomapserialize.cpp" />
+		<Unit filename="../iomapserialize.h" />
+		<Unit filename="../iomapxml.cpp" />
+		<Unit filename="../iomapxml.h" />
+		<Unit filename="../ioplayer.cpp" />
+		<Unit filename="../ioplayer.h" />
+		<Unit filename="../item.cpp" />
+		<Unit filename="../item.h" />
+		<Unit filename="../itemloader.h" />
+		<Unit filename="../items.cpp" />
+		<Unit filename="../items.h" />
+		<Unit filename="../logger.cpp" />
+		<Unit filename="../logger.h" />
+		<Unit filename="../luascript.cpp" />
+		<Unit filename="../luascript.h" />
+		<Unit filename="../mailbox.cpp" />
+		<Unit filename="../mailbox.h" />
+		<Unit filename="../map.cpp" />
+		<Unit filename="../map.h" />
+		<Unit filename="../md5.cpp" />
+		<Unit filename="../md5.h" />
+		<Unit filename="../monster.cpp" />
+		<Unit filename="../monster.h" />
+		<Unit filename="../monsters.cpp" />
+		<Unit filename="../monsters.h" />
+		<Unit filename="../movement.cpp" />
+		<Unit filename="../movement.h" />
+		<Unit filename="../networkmessage.cpp" />
+		<Unit filename="../networkmessage.h" />
+		<Unit filename="../npc.cpp" />
+		<Unit filename="../npc.h" />
+		<Unit filename="../otpch.h" />
+		<Unit filename="../otserv.cpp" />
+		<Unit filename="../otsystem.h" />
+		<Unit filename="../outfit.cpp" />
+		<Unit filename="../outfit.h" />
+		<Unit filename="../outputmessage.cpp" />
+		<Unit filename="../outputmessage.h" />
+		<Unit filename="../party.cpp" />
+		<Unit filename="../party.h" />
+		<Unit filename="../player.cpp" />
+		<Unit filename="../player.h" />
+		<Unit filename="../position.cpp" />
+		<Unit filename="../position.h" />
+		<Unit filename="../protocol.cpp" />
+		<Unit filename="../protocol.h" />
+		<Unit filename="../protocol76.cpp" />
+		<Unit filename="../protocol76.h" />
+		<Unit filename="../protocollogin.cpp" />
+		<Unit filename="../protocollogin.h" />
+		<Unit filename="../raids.cpp" />
+		<Unit filename="../raids.h" />
+		<Unit filename="../resources.h" />
+		<Unit filename="../scheduler.cpp" />
+		<Unit filename="../scheduler.h" />
+		<Unit filename="../scriptmanager.cpp" />
+		<Unit filename="../scriptmanager.h" />
+		<Unit filename="../server.cpp" />
+		<Unit filename="../server.h" />
+		<Unit filename="../sha1.cpp" />
+		<Unit filename="../sha1.h" />
+		<Unit filename="../spawn.cpp" />
+		<Unit filename="../spawn.h" />
+		<Unit filename="../spells.cpp" />
+		<Unit filename="../spells.h" />
+		<Unit filename="../status.cpp" />
+		<Unit filename="../status.h" />
+		<Unit filename="../talkaction.cpp" />
+		<Unit filename="../talkaction.h" />
+		<Unit filename="../tasks.cpp" />
+		<Unit filename="../tasks.h" />
+		<Unit filename="../teleport.cpp" />
+		<Unit filename="../teleport.h" />
+		<Unit filename="../templates.h" />
+		<Unit filename="../thing.cpp" />
+		<Unit filename="../thing.h" />
+		<Unit filename="../tile.cpp" />
+		<Unit filename="../tile.h" />
+		<Unit filename="../tools.cpp" />
+		<Unit filename="../tools.h" />
+		<Unit filename="../town.h" />
+		<Unit filename="../trashholder.cpp" />
+		<Unit filename="../trashholder.h" />
+		<Unit filename="../vocation.cpp" />
+		<Unit filename="../vocation.h" />
+		<Unit filename="../waitlist.cpp" />
+		<Unit filename="../waitlist.h" />
+		<Unit filename="../waypoints.h" />
+		<Unit filename="../weapons.cpp" />
+		<Unit filename="../weapons.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
